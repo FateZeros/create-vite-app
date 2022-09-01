@@ -1,16 +1,37 @@
 {
   "name": "create-vite-app",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "clean": "rm -rf node_modules **/*/node_modules"
+    "clean": "rm -rf node_modules **/*/node_modules",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "prepare": "husky install",
+    "lint:lint-staged": "lint-staged"
   },
   "engines": {
     "npm": ">=7.0.0",
     "node": ">=14.0.0"
   },
-  "keywords": [],
+  "keywords": [
+    "vue3",
+    "vite",
+    "ts"
+  ],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@changesets/cli": "^2.24.4",
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "@typescript-eslint/parser": "^5.36.1",
+    "eslint": "^8.23.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.2"
+  }
 }
