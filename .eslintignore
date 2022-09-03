@@ -9,4 +9,6 @@ dist/
 pnpm-lock.yaml
 package-lock.json
 
+packages/vite-cli/template/vue-ts/
+
 

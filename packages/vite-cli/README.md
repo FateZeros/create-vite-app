@@ -1,1 +1,3 @@
-# vite-cli
+# custom-vite-cli
+
+vue3 + vite cli
