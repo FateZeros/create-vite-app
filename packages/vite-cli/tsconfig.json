@@ -1,14 +1,54 @@
 {
+  "compileOnSave": true,
+  "buildOnSave": false,
   "compilerOptions": {
-    "outDir": "./lib",
-    "target": "es5",
-    "strict": true,
-    "downlevelIteration": true,
-    "declaration": true,
-    "skipLibCheck": true,
     "esModuleInterop": true,
-    "jsx": "preserve",
-    "lib": ["esnext", "dom"]
+    "target": "ESNext",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "alwaysStrict": true,
+    "sourceMap": true,
+    "strict": false,
+    "noEmit": false,
+    "noEmitHelpers": false,
+    "importHelpers": false,
+    "resolveJsonModule": true,
+    "strictNullChecks": false,
+    "allowUnreachableCode": true,
+    "lib": ["esnext", "DOM"],
+    "typeRoots": ["./node_modules/@types"],
+    "outDir": "./dist", // 重定向输出目录
+    "rootDir": "./src", // 仅用来控制输出的目录结构,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "isolatedModules": false,
+    "noImplicitAny": true,
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*"],
+  "exclude": [
+    // 不参与打包的目录
+    "node_modules",
+    "build",
+    "**/*.test.ts",
+    "scripts",
+    "./src/__tests__",
+    "template",
+    "theme"
+  ],
+  "ts-node": {
+    // Tell ts-node CLI to install the --loader automatically, explained below
+    "esm": true,
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  },
+  "lib": ["esnext"]
 }
