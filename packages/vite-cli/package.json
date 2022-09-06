@@ -4,13 +4,15 @@
   "description": "",
   "type": "module",
   "bin": {
-    "vite-cli": "src/index.ts"
+    "vite-cli": "src/index.js"
   },
   "files": [
     "template-*",
     "dist"
   ],
   "scripts": {
+    "dev": "node src/index.js",
+    "ts-mode": "ts-node src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
