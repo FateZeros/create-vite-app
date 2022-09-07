@@ -2,18 +2,20 @@
   "name": "@magic/vite-cli",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
+  "main": "./lib/index.ts",
   "bin": {
-    "vite-cli": "src/index.js"
+    "vite-cli": "./bin/vite-cli.ts"
   },
   "files": [
-    "template-*",
-    "dist"
+    "package.json",
+    "README.md",
+    "lib"
   ],
   "scripts": {
-    "dev": "node src/index.js",
-    "ts-mode": "ts-node src/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev:comment": "启动开发环境",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build:comment": "构建",
+    "build": "rm -rf lib && tsc --build"
   },
   "engines": {
     "node": "^14.18.0 || >=16.0.0"
@@ -22,12 +24,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^5.0.1",
+    "chalk": "4.1.2",
     "commander": "^9.4.0",
     "download-git-repo": "^3.0.2",
     "inquirer": "^9.1.1",
     "ora": "^6.1.2",
-    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^4.8.2"
   },
   "devDependencies": {

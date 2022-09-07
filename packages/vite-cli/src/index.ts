@@ -1,6 +1,5 @@
-#!/usr/bin/env node
-import program from "./core/program.js"
-import viteCliCoreCommand from "./core/command/index.js"
+import program from "./core/program"
+// import viteCliCoreCommand from "./core/command"
 
 // program.version("1.0.0", "-V, --version").usage("<command> [options]")
 
@@ -15,7 +14,7 @@ import viteCliCoreCommand from "./core/command/index.js"
 // program.parse(process.argv)
 
 async function createViteCliCommand() {
-  await viteCliCoreCommand()
+  // await viteCliCoreCommand()
   program.parse(process.argv)
 }
 
