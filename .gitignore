@@ -1,3 +1,4 @@
 remarks/
 
 node_modules/
+packages/vite-cli/lib/
