@@ -4,7 +4,7 @@
   "description": "",
   "main": "./lib/index.ts",
   "bin": {
-    "vite-cli": "./bin/vite-cli.ts"
+    "vite-cli": "./bin/vite-cli.js"
   },
   "files": [
     "package.json",

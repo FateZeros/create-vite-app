@@ -113,7 +113,7 @@
     "scripts",
     "./src/__tests__",
     "template",
-    "theme",
+    "theme"
   ],
   "ts-node": {}
 }
