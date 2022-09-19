@@ -6,11 +6,12 @@ import {
   VITE_CLI_VERSION,
   BUILD_DATE
 } from "../../../shared/constant"
+import { printLog } from "../../../utils/log"
 
 function getVersionView() {
-  chalk.bgBlue(VITE_CLI_VERSION)
-  chalk.bgCyan(VERSION)
-  chalk.bgGreen(BUILD_DATE)
+  printLog(chalk.bgBlue(VITE_CLI_VERSION))
+  printLog(chalk.bgCyan(VERSION))
+  printLog(chalk.bgGreen(BUILD_DATE))
   return ""
 }
 
@@ -19,8 +20,8 @@ const createVersionCommand = async () => {
     .version(getVersionView(), "-v --version")
     .usage("<command> [options]")
     .action(() => {
-      chalk.bgCyan(VERSION)
-      chalk.bgGreen(BUILD_DATE)
+      printLog(chalk.bgCyan(VERSION))
+      printLog(chalk.bgGreen(BUILD_DATE))
     })
 }
 export default createVersionCommand
