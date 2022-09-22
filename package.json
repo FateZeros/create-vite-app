@@ -10,7 +10,8 @@
     "changeset": "changeset",
     "version-packages": "changeset version",
     "prepare": "husky install",
-    "lint:lint-staged": "lint-staged"
+    "lint:lint-staged": "lint-staged",
+    "prettier": "prettier --write \"packages/**/*.{ts,js,json,scss}\""
   },
   "engines": {
     "npm": ">=7.0.0",
