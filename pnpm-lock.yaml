@@ -35,22 +35,26 @@ importers:
   packages/vite-cli:
     specifiers:
       '@types/node': ^18.7.14
+      '@types/prompts': ^2.0.14
       '@types/shelljs': ^0.8.11
       chalk: 4.1.2
       commander: ^9.4.0
       download-git-repo: ^3.0.2
       inquirer: ^9.1.1
       ora: ^6.1.2
+      prompts: ^2.4.2
       shelljs: ^0.8.5
       ts-node-dev: ^2.0.0
       typescript: ^4.8.2
     dependencies:
+      '@types/prompts': registry.npmmirror.com/@types/prompts/2.0.14
       '@types/shelljs': registry.npmmirror.com/@types/shelljs/0.8.11
       chalk: registry.npmmirror.com/chalk/4.1.2
       commander: registry.npmmirror.com/commander/9.4.0
       download-git-repo: registry.npmmirror.com/download-git-repo/3.0.2
       inquirer: registry.npmmirror.com/inquirer/9.1.1
       ora: registry.npmmirror.com/ora/6.1.2
+      prompts: registry.npmmirror.com/prompts/2.4.2
       shelljs: registry.npmmirror.com/shelljs/0.8.5
       ts-node-dev: registry.npmmirror.com/ts-node-dev/2.0.0_tphhiizkxv2hzwkunblc3hbmra
       typescript: registry.npmmirror.com/typescript/4.8.2
@@ -763,6 +767,14 @@ packages:
     name: '@types/normalize-package-data'
     version: 2.4.1
     dev: true
+
+  registry.npmmirror.com/@types/prompts/2.0.14:
+    resolution: {integrity: sha512-HZBd99fKxRWpYCErtm2/yxUZv6/PBI9J7N4TNFffl5JbrYMHBwF25DjQGTW3b3jmXq+9P6/8fCIb2ee57BFfYA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/prompts/-/prompts-2.0.14.tgz}
+    name: '@types/prompts'
+    version: 2.0.14
+    dependencies:
+      '@types/node': registry.npmmirror.com/@types/node/18.7.14
+    dev: false
 
   registry.npmmirror.com/@types/responselike/1.0.0:
     resolution: {integrity: sha512-85Y2BjiufFzaMIlvJDvTTB8Fxl2xfLo4HgmHzVBz08w4wDePCTjYw66PdrolO0kzli3yam/YCgRufyo1DdQVTA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/responselike/-/responselike-1.0.0.tgz}
@@ -3554,6 +3566,13 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
+  registry.npmmirror.com/kleur/3.0.3:
+    resolution: {integrity: sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/kleur/-/kleur-3.0.3.tgz}
+    name: kleur
+    version: 3.0.3
+    engines: {node: '>=6'}
+    dev: false
+
   registry.npmmirror.com/kleur/4.1.5:
     resolution: {integrity: sha512-o+NO+8WrRiQEE4/7nwRJhN1HWpVmJm511pBHUxPLtp0BUISzlBplORYSmTclCnJvQq2tKu/sgl3xVpkc7ZWuQQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/kleur/-/kleur-4.1.5.tgz}
     name: kleur
@@ -4361,6 +4380,16 @@ packages:
     version: 2.0.1
     dev: false
 
+  registry.npmmirror.com/prompts/2.4.2:
+    resolution: {integrity: sha512-NxNv/kLguCA7p3jE8oL2aEBsrJWgAakBpgmgK6lpPWV+WuOmY6r2/zbAVnP+T8bQlA0nzHXSJSJW0Hq7ylaD2Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/prompts/-/prompts-2.4.2.tgz}
+    name: prompts
+    version: 2.4.2
+    engines: {node: '>= 6'}
+    dependencies:
+      kleur: registry.npmmirror.com/kleur/3.0.3
+      sisteransi: registry.npmmirror.com/sisteransi/1.0.5
+    dev: false
+
   registry.npmmirror.com/proto-list/1.2.4:
     resolution: {integrity: sha512-vtK/94akxsTMhe0/cbfpR+syPuszcuwhqVjJq26CuNDgFGj682oRBXOP5MJpv2r7JtE8MsiepGIqvvOTBwn2vA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/proto-list/-/proto-list-1.2.4.tgz}
     name: proto-list
@@ -4760,6 +4789,12 @@ packages:
     resolution: {integrity: sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/signal-exit/-/signal-exit-3.0.7.tgz}
     name: signal-exit
     version: 3.0.7
+
+  registry.npmmirror.com/sisteransi/1.0.5:
+    resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/sisteransi/-/sisteransi-1.0.5.tgz}
+    name: sisteransi
+    version: 1.0.5
+    dev: false
 
   registry.npmmirror.com/slash/3.0.0:
     resolution: {integrity: sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/slash/-/slash-3.0.0.tgz}
