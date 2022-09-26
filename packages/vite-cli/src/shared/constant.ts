@@ -7,4 +7,6 @@ const VITE_CLI_VERSION = `
     🌱🌱 Build last date: ${getNowDate()} 🌱🌱
 `
 
+// const TEMPLATE_PROJECTS =
+
 export { PKG, VITE_CLI_VERSION, PKG_NAME }
