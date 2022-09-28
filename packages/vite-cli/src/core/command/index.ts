@@ -1,10 +1,10 @@
 import createVersionCommand from "./version"
 // import helpCommand from "./help"
 import createCommand from "./create"
-import createListOptions from "./template-list"
+// import createListOptions from "./template-list"
 export default function viteCliCoreCommand() {
   // helpCommand()
   createVersionCommand()
-  createListOptions()
+  // createListOptions()
   createCommand()
 }

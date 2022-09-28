@@ -9,7 +9,8 @@ async function createProjectQuestions(): Promise<void> {
     await createQuestion(frames)
     // 包管理器
     await createQuestion(packageTools)
-    console.log(options, 111)
+    // 根据不同的选项进行配置
+    console.log(options, "==== 最终的选项配置 ====")
   } catch (e: any) {
     console.log(e.message)
     process.exit(1)
