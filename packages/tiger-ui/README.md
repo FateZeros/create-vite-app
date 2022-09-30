@@ -1,10 +1,14 @@
 # tiger-ui
 
-This template should help get you started developing with Vue 3 in Vite.
+此项目主要基于 antd-design-vue 进行 UI 库的二次开发 && 自定义 UI 组件。
 
-## Recommended IDE Setup
+[vite 官网](https://cn.vitejs.dev/guide/)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## VSCode 插件安装
+
+[VSCode](https://code.visualstudio.com/)
+[Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur)
+[TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
 ## Type Support for `.vue` Imports in TS
 
@@ -17,35 +21,31 @@ If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has a
    2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
 2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
 
-## Customize configuration
+## vite 配置
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+[Vite Configuration Reference](https://cn.vitejs.dev/config/).
 
-## Project Setup
+## 项目运行
 
 ```sh
 pnpm install
-```
 
-### Compile and Hot-Reload for Development
-
-```sh
 pnpm dev
-```
 
-### Type-Check, Compile and Minify for Production
-
-```sh
 pnpm build
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+### 项目单元测试
+
+[Vitest](https://vitest.dev/)
 
 ```sh
 pnpm test:unit
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+### 项目 ESlint
+
+[ESLint](https://eslint.org/)
 
 ```sh
 pnpm lint
