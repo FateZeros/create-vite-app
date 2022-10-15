@@ -8,8 +8,10 @@ export {};
 declare module "@vue/runtime-core" {
   export interface GlobalComponents {
     AInput: typeof import("ant-design-vue/es")["Input"];
+    ASelect: typeof import("ant-design-vue/es")["Select"];
     RouterLink: typeof import("vue-router")["RouterLink"];
     RouterView: typeof import("vue-router")["RouterView"];
     TigerInput: typeof import("./src/components/tiger-input/tiger-input.vue")["default"];
+    TigerSelect: typeof import("./src/components/tiger-select/tiger-select.vue")["default"];
   }
 }
